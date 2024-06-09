@@ -3,12 +3,16 @@ import { useState } from "react";
 import Card from "./components/Card";
 
 export default function Home() {
+ //dogeVotes -> state, setDogeVotes -> function
   const [dogeVotes, setDogeVotes] = useState<number>(0)
 
   const handleVote = () => {
     setDogeVotes(dogeVotes + 1)
   }
 
+  //const [isOpen, setIsOpen] = useState<boolean>(false)
+  //const [selectCandidate, setSelectedCandidate] = useState<string>("")
+  //const numberOfVotes = 0;
   const candidates = ["Doge", "Oh Long Johnson", "Grumpy Cat"];
   const candidatesInfo = [
     {
